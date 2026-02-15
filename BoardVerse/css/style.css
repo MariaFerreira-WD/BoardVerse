@@ -1,0 +1,387 @@
+@font-face {
+  font-family: Fugu e Maki;
+  src: url(../fontes/Maki_Fugu.ttf);
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: Galaxy;
+  src: url(../fontes/Venus_Rising.otf);
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fontes/Poppins.ttf);
+}
+
+html,
+body {
+  grid-template-rows: auto 1fr auto;
+  min-height: 62rem;
+}
+
+body {
+  background-color: #120b17 !important;
+  color: white !important;
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+.contact {
+  width: 100px !important;
+  height: auto !important;
+}
+
+.card {
+  border: none !important;
+  background-color: transparent !important;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.product-card,
+.cart-body {
+  background: linear-gradient(145deg, #1b1026, #120b17);
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(183, 0, 255, 0.438);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  margin-top: 35px;
+}
+
+.product-card:hover,
+.cart-body:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 255, 21, 0.664);
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08);
+}
+
+.card-body {
+  color: white;
+}
+
+.product-image {
+  transition: all 0.5s ease;
+  height: 225px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.cart-item img {
+  max-width: 100px;
+  height: auto;
+}
+
+.quantity-input {
+  width: 50px;
+}
+
+.about_us {
+  width: 100px;
+  height: auto;
+}
+
+#sobre {
+  margin-left: 10%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Galaxy";
+}
+
+p,
+.copyright {
+  font-family: "Poppins";
+}
+
+#img_perfil {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#stock {
+  width: 20px;
+  height: auto;
+}
+
+.moreInfo,
+.addCart {
+  color: #2fdd2f;
+  background-color: black;
+  border: 2px solid #2fdd2f;
+  transition: all 0.3s ease;
+}
+
+.moreInfo:hover,
+.addCart:hover {
+  transform: translateY(5px);
+  box-shadow: -5px 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.noStock:disabled {
+  color: #dd2f2f;
+  background-color: transparent;
+  border: 3px solid #dd2f2f;
+  transition: all 0.3s ease;
+}
+
+.noStock:hover {
+  transform: translateY(5px);
+  box-shadow: -5px 5px 15px rgba(204, 46, 46, 0.3);
+}
+
+.addCart,
+.moreInfo,
+.noStock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  margin-top: 20px;
+}
+
+.addCart i,
+.moreInfo i,
+.noStock i {
+  line-height: 1;
+}
+
+.search-bar {
+  padding-top: 20px;
+  margin-left: 30px;
+  width: 330px;
+}
+
+.search-bar .input-group {
+  border-radius: 30px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.search-bar .form-control {
+  border: none;
+  padding-left: 20px;
+}
+
+.search-bar .btn {
+  border: none;
+  color: white;
+}
+
+.form-control {
+  font-size: 12px;
+  font-family: Poppins;
+}
+
+#search-addon {
+  background-color: white;
+  color: black;
+}
+
+.badge-custom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+#foto_utilizador {
+  width: 200px;
+  height: auto;
+}
+
+.upload {
+  width: 150px;
+  position: relative;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.upload img {
+  border: 8px solid #2fdd2f;
+  background-color: white;
+}
+
+.upload .round {
+  position: absolute;
+  background-color: #0b0d17;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload .round input[type="file"] {
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+.btn_perfil {
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.profile {
+  margin-top: 5%;
+}
+
+.profile_pic {
+  border-radius: 15%;
+}
+
+.sideBar {
+  background: transparent;
+  padding: 40px;
+  color: white;
+  border-radius: 20px;
+}
+
+.editData {
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.nav-pills .nav-link {
+  color: white;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover,
+.dropdown-item:hover {
+  background-color: #2fdd2f !important;
+  color: white;
+}
+
+.nav-pills .nav-link.active,
+.dropdown-item.active {
+  background: linear-gradient(135deg, #731eac, #ab63db) !important;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show,
+.dropdown-item {
+  background: transparent !important;
+}
+
+.consult {
+  justify-content: end;
+  float: right;
+}
+
+.nav-item.dropdown .nav-link {
+  color: inherit;
+}
+
+.nav-item.dropdown .nav-link:focus,
+.nav-item.dropdown .nav-link.show {
+  color: inherit;
+}
+
+.nav_page {
+  padding-top: 3rem;
+  background: transparent;
+  border: none;
+  position: static;
+  margin: 40px 0;
+}
+
+.nav_page .pagination .page-item .page-link {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #2fdd2f;
+}
+
+.nav_page .pagination .page-item.active .page-link {
+  color: #2fdd2f;
+}
+
+.nav_page .pagination .page-item.disabled .page-link {
+  display: none;
+}
+
+.nav_page .pagination .page-item:not(.active):not(.disabled) .page-link:hover {
+  background-color: #731eac;
+  color: #fff;
+}
+
+.btn-perfil {
+  color: #2fdd2f;
+  background-color: black;
+  border: 2px solid #2fdd2f;
+  text-decoration: none;
+}
+
+.table-tickets {
+  --bs-table-bg: black;
+  --bs-table-color: white;
+
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.507);
+}
+
+.btn-checkout {
+  background: linear-gradient(135deg, #731eac, #ab63db);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  padding-top: 20px;
+}
+
+.btn-cart {
+  color: #db6363;
+  background-color: transparent;
+  border: none !important;
+  justify-content: end;
+  text-align: end;
+  float: right;
+}
+
+.returnBtn {
+  cursor: pointer;
+  color: white;
+  float: right;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.returnBtn:hover {
+  box-shadow: 4px 4px 4px #7c4dff;
+  transform: translateX(-4px);
+}
+
+.btn-custom {
+  color: #2fdd2f;
+  background-color: black;
+  border: 2px solid #2fdd2f;
+  transition: all 0.3s ease;
+}

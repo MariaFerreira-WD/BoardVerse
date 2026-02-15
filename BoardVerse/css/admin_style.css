@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Fugu e Maki;
+  src: url(../fontes/Maki_Fugu.ttf);
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: Galaxy;
+  src: url(../fontes/Venus_Rising.otf);
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fontes/Poppins.ttf);
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #120b17 !important;
+  color: white !important;
+}
+
+#logo {
+  width: 80px;
+  height: auto;
+  margin-top: 5px;
+}
+
+#bv {
+  width: 175px;
+  height: auto;
+  padding-right: 20px;
+}
+
+h1,
+h5 {
+  font-family: "Galaxy";
+}
+
+p {
+  font-family: "Poppins";
+}
+
+.header {
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+#edit {
+  margin-bottom: 10px;
+}
+
+.btn-admin {
+  color: #2fdd2f;
+  background-color: black;
+  border: 2px solid #2fdd2f;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.table {
+  border-color: #2a2a2a;
+  --bs-table-bg: #121212;
+  --bs-table-color: #eaeaea;
+}
+
+thead {
+  font-family: Galaxy;
+  --bs-table-bg: #6b3fa0;
+}
+
+td {
+  font-family: Poppins;
+}
+
+select {
+  background-color: #1a1a1a;
+  color: #eaeaea;
+  border: 1px solid #3a3a3a;
+}
+
+select:hover {
+  border-color: #7c4dff;
+}
+
+select:focus {
+  border-color: #2fdd2f;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(61, 220, 151, 0.25);
+}
+
+.editBtn {
+  background-color: transparent;
+  border: 1px solid #2fdd2f;
+  color: #2fdd2f;
+}
+
+.editBtn:hover {
+  background-color: rgba(61, 220, 151, 0.15);
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.deleteBtn:hover {
+  background-color: #ff5c5c71;
+}
+
+.btn-action {
+  color: white;
+}
+
+.btn-addProduct {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-delete {
+  color: #dd2f2f;
+  background-color: black;
+  border: 2px solid #dd2f2f;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  margin-top: 10px;
+}
