@@ -1,18 +1,7 @@
 <?php
 session_start();
 
-// Configuração da base de dados
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'boardverse';
-
-
-$conn = new mysqli($host, $user, $password, $dbname);
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
-
+require_once 'sql/bd.php';
 
 if (isset($_POST['confirm'])) {
 

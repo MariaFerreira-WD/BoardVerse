@@ -1,3 +1,5 @@
+// checkout.php
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("checkoutForm");
 
@@ -12,14 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Verifica se os campos estão vazios
     if (nome === "") {
       alert("Nome obrigatório");
+      return;
     }
 
     if (dataNascimento === "") {
       alert("Data de Nascimento obrigatório");
+      return;
     }
 
     if (morada === "") {
       alert("Morada obrigatório");
+      return;
     }
 
     // Validar a idade
@@ -30,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (idade < 18) {
         alert("Deve ter pelo menos 18 anos para concluir a compra");
+        return;
       }
     }
 

@@ -229,7 +229,6 @@ if (isset($_GET['id_product'])) {
             </tbody>
         </table>
     </div>
-    <?php include 'componentes/footer.php'; ?>
     <script>
         function contador(textarea) {
             const max = 255;

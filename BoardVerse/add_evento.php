@@ -42,6 +42,45 @@ if (isset($_GET['id_event'])) {
         display: flex;
         justify-content: space-between;
     }
+
+    .card-sleek {
+        background: linear-gradient(135deg, #731eac, #ab63db);
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        margin: auto auto;
+    }
+
+    .card-sleek:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-sleek .card-body {
+        padding: 2rem;
+    }
+
+    .card-sleek .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .card-sleek .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .card-sleek .btn-sleek {
+        background-color: #fff;
+        color: #667eea;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .card-sleek .btn-sleek:hover {
+        background-color: #667eea;
+        color: #fff;
+    }
 </style>
 
 <body>
@@ -58,6 +97,36 @@ if (isset($_GET['id_event'])) {
         </div>
     </header>
     <main>
+        <div class="container">
+            <div class="col-md-6 card card-sleek" style="max-width: 600px;">
+                <div class="card-body">
+                    <h5 class="card-title">Novo Evento</h5>
+                    <form action="new_event.php" enctype="multipart/form-data" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label class="form-label">Titulo</label>
+                                <input type="text" class="form-control" name="title">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Corpo</label>
+                                <textarea type="text" class="form-control" name="body"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Imagem</label>
+                                <input type="file" class="form-control" name="img_event" accept="image/*">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Url</label>
+                                <input type="tel" class="form-control" name="url">
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-admin" name="add">Adicionar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </main>
     <script

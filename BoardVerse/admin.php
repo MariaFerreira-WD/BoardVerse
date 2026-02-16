@@ -89,6 +89,7 @@ $edit = isset($_POST['edit_text']);
     position: relative;
     transition: transform 0.3s ease;
     cursor: pointer;
+    display: block;
   }
 
   #products {
@@ -201,49 +202,49 @@ $edit = isset($_POST['edit_text']);
         </div>
 
         <div class="col-md">
-          <div class="bento-item" onclick="user()">
+          <a class="bento-item" href="admin_utilizadores.php">
             <img src="imagens/admin/utilizador.png" alt="Utilizadores">
             <div class="bento-content d-flex gap-2">
               <h4>Utilizadores</h4>
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="col-md">
-          <div class="bento-item" onclick="orders()">
+          <a class="bento-item" href="admin_encomendas.php">
             <img src="imagens/admin/orders.png" alt="Encomendas">
             <div class="bento-content d-flex gap-2">
               <h4>Encomendas</h4>
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="col-md">
-          <div class="bento-item" onclick="events()">
+          <a class="bento-item" href="admin_eventos.php">
             <img src="imagens/admin/events.png" alt="Eventos">
             <div class="bento-content d-flex gap-2">
               <h4>Eventos</h4>
 
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="col-md">
-          <div class="bento-item" onclick="client_support()">
+          <a class="bento-item" href="admin_tickets.php">
             <img src="imagens/admin/client_support.png" alt="Apoio ao cliente">
             <div class="bento-content d-flex gap-2">
               <h4>Tickets</h4>
 
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md">
-          <div class="bento-item" onclick="products()">
+          <a class="bento-item" href="admin_produtos.php">
             <img src="imagens/admin/products.png" id="products" alt="Produtos">
             <div class="bento-content d-flex gap-2">
               <h4>Produtos</h4>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -254,27 +255,6 @@ $edit = isset($_POST['edit_text']);
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  <script>
-    function user() {
-      window.location.href = "admin_utilizadores.php";
-    }
-
-    function products() {
-      window.location.href = "admin_produtos.php";
-    }
-
-    function events() {
-      window.location.href = "admin_eventos.php";
-    }
-
-    function orders() {
-      window.location.href = "admin_encomendas.php";
-    }
-
-    function client_support() {
-      window.location.href = "admin_tickets.php";
-    }
-  </script>
 </body>
 
 </html>

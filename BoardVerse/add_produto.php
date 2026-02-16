@@ -122,7 +122,6 @@ session_start();
                     </form>
                 </div>
             </div>
-            </form>
         </div>
     </body>
     <?php include 'componentes/footer.php'; ?>

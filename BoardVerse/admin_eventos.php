@@ -87,7 +87,7 @@ if (isset($_GET['id_event'])) {
     <main>
         <div class="container">
             <div class="d-flex justify-content-end mb-4">
-                <button class="btn btn-admin" onclick="add_product()">
+                <button class="btn btn-admin" onclick="add_event()">
                     Adicionar evento
                 </button>
             </div>
@@ -134,8 +134,8 @@ if (isset($_GET['id_event'])) {
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script>
-        function add_product() {
-            window.location.href = "add_produto.php";
+        function add_event() {
+            window.location.href = "add_evento.php";
         }
     </script>
 </body>
